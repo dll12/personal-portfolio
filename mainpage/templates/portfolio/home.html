@@ -1,0 +1,29 @@
+<html>
+		<head>
+				<title>Dashboard</title>
+		</head>
+		<center>
+		<h1>This is the homepage</h1>
+
+		{% for project in projects %}
+
+		<h3>
+		{{ project.title }}
+		</h3>
+		<br>
+		<p>
+		{{ project.desc }}
+		</p>
+		<br>
+		<img src="{{ project.img.url }}" height=50 width=40>
+
+		{% if project.url %}
+		<br>
+				<a href="{{ project.url }}">Link</a>
+		{% endif %}
+
+
+		{% endfor %}
+
+		</center>
+</html>
