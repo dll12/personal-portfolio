@@ -5,3 +5,6 @@ class Blog(models.Model):
     dat = models.DateField()
     desc = models.TextField()
 
+
+    def __str__(self):
+        return self.title

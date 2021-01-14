@@ -1,0 +1,19 @@
+{% extends 'portfolio/base.html' %}
+
+{% block content %}
+<center>
+		{{ blog.title }}
+</center>
+<br>
+
+<right>
+		{{ blog.dat }}
+</right>
+
+		<center>
+<p>
+		{{ blog.desc }}
+</p>
+</center>
+{% end block %}
+
