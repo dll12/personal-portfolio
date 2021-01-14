@@ -1,20 +1,10 @@
-<html>
-		<head>
-				<title>Blogs</title>
-		</head>
-		<h1>
-				Blogs
-		</h1>
-				<br>
+<h1>Blogs</h1>
+<br>
+				{% for blog in blogs %}
 
-				{% for pro in project %}
-
-				<h3>{{pro.title}}</h3>
-				<h6>{{pro.dat}}</h6>
-				<p>{{pro.desc}}</p>
+				<h3>{{blog.title}}</h3>
+				<h6>{{blog.dat}}</h6>
+				<p>{{blog.desc}}</p>
 				<br>
 
 				{% endfor %}
-
-		</h2>
-</html>

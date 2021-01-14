@@ -3,7 +3,11 @@
 				<title>Dashboard</title>
 		</head>
 		<center>
-		<h1>This is the homepage</h1>
+		<h1>Dashboard</h1>
+		{% load static %}
+		<img src="{% static 'portfolio/1.jpg' %}">
+
+		<a href="{% static 'portfolio/1.pdf' %}">Resume</a>
 
 		{% for project in projects %}
 
