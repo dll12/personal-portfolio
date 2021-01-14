@@ -2,13 +2,9 @@
 {% block content %}
 				<title>Dashboard</title>
 		<center>
-		<h1>Dashboard</h1>
 		{% load static %}
-		<a href="{% static 'portfolio/1.pdf' %}">Resume</a>
-		<a href="{% url 'blog:blog' %}">Blogs</a>
-		<br>
-		<img src="{% static 'portfolio/1.jpg' %}">
 
+		<img src="{% static 'portfolio/1.jpg' %}">
 
 		{% for project in projects %}
 
